@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Solution</title>
+    <style>
+         hr{
+            border-radius: 5px;
+            border-top-width: 10px;
+            border-color: #77ff00;
+        }
+       .subheading{
+        color: #9b4d08;
+            font-size: 30px;
+       }
+       p{
+        font-size:x-large;
+        color: #069406;
+       }
+       span{
+            font-size: 25px;
+            color: blue;
+        }
+        .red-color{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each. -->
+    <div>
+        <ol>
+            <li><span class="subheading">Unary Operator</span>
+                <p>
+                    Unary operators are operators that perform actions on a single operand. Let's explore some of the Unary 
+                    operators: 
+                    <ul>
+                        <li><span> Unary Plus('+') :</span> 
+                            <p>
+                                The unary plus operator is used to convert its operand into a number. While this might seem redundant, it becomes valuable when dealing with user inputs that need to be explicitly converted to numbers. <br>
+                                Example: <br>
+                                let numString  = "10"; <br>
+                                let negativeNum = +numString;     // Output: 10 <br>
+                                <span class="red-color">
+                                    We are declaring a variable numString and assigning it the value "42", which is a string representing the characters "4" and "2". <br>
+
+                                Then, We use the unary plus operator (+) on numString to convert it into a number. This unary plus operation constrain the string "42" into the numeric value 42
+                                </span>
+                            </p>
+                        </li>
+                        
+                        <li><span>Unary negation('-')</span> 
+                        <p>
+                            The unary negation operator is used to negate the value of its operand, effectively changing its sign.
+                            Example: <br>
+                            let num = 10; <br>
+                            let negativeNum = -num;     // Output: -10 <br>
+                            <span class="red-color">The unary negation operator simply changes the sign of a number. If the number is positive, it becomes negative, and if it's negative, it becomes positive</span>
+                        </p>
+                        </li>
+                        <hr>
+                        <li><span class="subheading">Binary Operator</span>
+                            <p>
+                                Bitwise operators are used in programming to perform operations on individual bits of binary numbers. These operators are commonly used in tasks that require low-level manipulation of data, such as working with hardware, optimizing code, and cryptography.
+                                
+                                <p>
+                                    Bitwise operators are essential tools for performing low-level bit manipulation in programming. They are commonly used in scenarios where you need to optimize code, work with binary data, or interface with hardware. 
+                                </p>
+                                <span>The most commonly used 
+                                    bitwise operators in programming are as follows.</span>
+                                    <br> <br>
+                                    <ul>
+                                        <li><span>Bitwise AND (&)</span>
+                                        <p>
+                                            The bitwise AND operator (`&`) compares each bit of two integers and returns a new integer where each bit is set to 1 only if both corresponding bits in the original integers are 1. Otherwise, it sets the bit to 0.
+                                            <br>
+                                            Syntax: <br>
+                                            result = operand1 & operand2
+
+                                        </p>
+                                        </li>
+                                        <li><span>Bitwise OR (|)</span>
+                                            <p>
+                                                The bitwise OR operator (|) compares each bit of two integers and returns a Yew integer. In the resulting 
+                                                integer, each bit is set to 1 if at least one of the corresponding bits in the original integers is 1. 
+                                                <br>
+                                                Syntax: <br>
+                                                result = operand1 | operand2
+    
+                                            </p>
+                                        </li>
+                                        <li><span>Bitwise XOR (^)</span>
+                                            <P>
+                                                The bitwise XOR operator (`^`) compares each bit of two integers and returns a new integer where each bit is set to 1 if only one of the corresponding bits in the original integers is 1.
+                                                <br>
+                                                Syntax: <br>
+                                                result = operand1 ^ operand2
+    
+                                            </P>
+                                        </li>
+                                        <li><span>Bitwise NOT (~)</span>
+                                        <p>
+                                            The bitwise NOT operator (`~`) is a unary operator that flips the bits of an integer, changing 1s to 0s and 0s to 1s.
+                                            <br>
+                                            Syntax: <br>
+                                            result = ~operand
+
+                                        </p>
+                                        </li>
+                                        <li><span>Bitwise Left Shift (<<) and Right Shift (>>)</span>
+                                        <p>
+                                            Bitwise left shift (`<<`) and right shift (`>>`) operators are used to shift the bits of an integer to the left or right by a specified number of positions.
+                                            <br>
+                                            Syntax: <br>
+                                            result = operand << num_bits; // Left Shift <br>
+                                            result = operand >> num_bits; // Right Shift   <br>
+
+                                        </p>
+                                        </li>
+                                    </ul>
+                            </p>
+                        </li>
+                        <hr>
+                        <li><span class="subheading">Ternary Operator</span>
+                            <p>
+                               The ternary operator is a shorthand way to write simple conditional statements.
+                                The syntax is in the following way: <br>
+                                <h2><span>Condition </span><span class="red-color"> ? </span> <span>expression 1</span> <span class="red-color"> : </span> <span> expression 2</span> </h2>
+                               
+                                <span>Condition </span>A boolean expression that is evaluated.  <br>
+                                <span>expr1</span> The value to return if the condition is true.   <br>
+                                <span>expr2</span> The value to r!turn if the condition is false. <br>
+                                <br>
+                               <p>
+                                const age = 18; <br>
+                                const canVote = age >= 18 ? ' YES' : 'NO' ; <br>
+                               // OUTPUT : 'YES'
+                               </p>
+                            </p>
+                            </li>
+        </ol>
+    </div>
+</body>
+</html>

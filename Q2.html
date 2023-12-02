@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Solution</title>
+    <style>
+        h1{
+            font-size: 35px;
+            color: #ff0088;
+            text-align: center;
+        }
+        .subheading{
+            color: #9b4d08;
+            font-size: 30px;
+        }
+        span{
+            font-size: 25px;
+            color: blue;
+        }
+        .red-color{
+            color: red;
+        }
+        p{
+            font-size:x-large;
+            color: #069406;
+        }
+        hr{
+            border-radius: 5px;
+            border-top-width: 10px;
+            border-color: #ff0088;
+        }
+      
+        ul{
+            list-style-type: none;
+        }
+        .sublist{
+            list-style-type:upper-latin;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Describe the categorization of operators in JavaScript based on their functionality. Provide examples for each category -->
+        <h1>There are different types of Operators</h1>
+        <ul>
+            <li><span class="subheading">1. Arithmetic Operators :</span>
+                <p>
+                    Arithmetic operators are used to do mathematical operations like addition, subtraction, multiplication, division, 
+                    etc. It simply takes numerical values as operands, performs an arithmetic operation, and returns a numerical 
+                    value.
+                    <p >
+                        They are <span >Addition ( + ), Subtraction ( - ), Multiplication (*), Division (/), Modulus(%), Increment and Decrement(post & pre) </span>
+                    </p>
+                    <p class="example">
+                        let num1 =100;
+                        <br>
+                        let num2 =2;
+                        <br>
+                        <ul>
+                            <li>let result = num1 + num2;  // (Answer will be 102) // Addition Operator</li>
+
+                            <li>let result = num1 - num2;  // (Answer will be 98) // Subtraction Operator</li>
+
+                            <li>let result = num1 * num2;  // (Answer will be 200) // Multiplication Operator</li>
+
+                            <li>let result = num2 / num1;  // (Answer will be 50) // Division Operator</li>
+
+                            <li>let result = num2 % num1;  // (Answer will be 0) // Modulus Operator</li>
+
+                              <li>                                 <p>
+                                    let x = 3;  const y = x++; (Answer will be x:4, y:3) // <span >Pre-increment Operator.</span>
+                                    If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+                                </p>
+                            </li>
+                            
+                            <li> 
+                                <p>
+                                    let x = 3;
+                                const y = ++x; // (Answer will be x:4, y:4) // <span>Post-increment Operator.</span>
+                                    If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.  
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    let x = 3;  const y = x--; (Answer will be x:2, y:3) // <span >Pre-decrement Operator.</span>
+                                    If used postfix, with operator after operand (for example, x--), the decrement operator decrements and returns the value before decrementing.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    let x = 3;
+                                const y = --x; // (Answer will be x:2, y:2) // <span>Post-decrement Operator.</span>
+                                If used prefix, with operator before operand (for example, --x), the decrement operator decrements and returns the value after decrementing.
+                                </p>
+                            </li>
+
+                        </ul>
+                    </p>
+                </p>
+            </li>
+            <hr>
+            <li><span class="subheading">2. Assignment Operator</span>
+                <p>
+                    Assignment operators do something with the value on the right side to set the variable on the left side or we can say Assignment operators are an essential aspect of JavaScript that allow you to assign values to variables and perform arithmetic operations in a concise manner. We can divided into <span class="red-color">two types</span>:
+                    <ul>
+                        <li>
+                            <p><span>Simple Assignment(=):</span>The simple assignment operator is used to assign a single value to a variable. It takes the value on the right hand side (RHS) and assigns it to the variable on the left-hand side (LHS).
+                            <span>Example: </span>
+                            <br>
+                            <span>let length =50;</span>
+                            <br>
+                            In the above example, we used the simple assignment operator(=) to assign the value 50 to the variable 'length'. 
+                        </p>
+                        </li>
+                        <li>
+                            <p>
+                            <span> Compound Assignment:</span>Compound assignment operators combine arithmetic operations with assignment. These operators perform the specified arithmetic operation on the variable's current value and then assign the result back to the variable. They many shorthand way of writing expressions.
+                            <li><span>+= </span><b> Addition and assignment</b> <br>
+                               let x = 6; <br>
+                               x += 4; // Equivalent to x = x + 4; <br>
+                               Output: 10 <br>
+                               In the example above, the += operator adds 4 to the current value of x (which is 6) and assign the result (10) back to x.
+                     
+                            </li>
+                            <li><span>-= </span> <b>Subtraction and assignment</b> <br>
+                                the -= operator subtracts from the current value and assigns the result.
+                            
+                            </li>
+                            <li><span>*= </span> <b>Multiplication and assignment</b> <br>
+                                the *= operator multiplies the current value  and assigns the result
+                            </li>
+                            <li><span>/= </span> <b>Division and assignment</b> <br>
+                                /= operator divides the current value and assigns the result
+                            </li>
+                            <li><span>%= </span> <b>Modulus and assignment (remainder after division)</b> <br>
+                                %= operator finds the remainder of dividing the current value of the dividend and assigns the result 
+                            </li>
+                            <li><span>**= </span> <b>Exponentiation and assignment</b> <br>
+                                **= operator calculates the value of the current base raised to the power and assigns the result. 
+                            </li>
+                            </p>
+                           
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <hr>
+            <li><span class="subheading">3. Comparison Operator</span>
+            <p>
+                Comparison Operators are used to compare values and return Boolean results ( true or false) based on the comparison.
+                There are <span class="red-color">four types</span> of comparison operators.
+                <ul class="sublist">
+                    <li><span>Equality (==) and Strict Equality (===) :</span>  The equality operator (==) and strict equality operator (===) are used to compare two values for 
+                        equality.  The equality operator (==) compares both  the values. It returns true if both values are equal.
+                        The strict equality operator (===) compares both the values and their types. It only returns true if both 
+                        values and types are the same.</li>
+
+                    <li><span>Inequality (!=) and Strict Inequality (!==) :</span> The inequality operator (!=) compares two values to check if they  are not equal and return a Boolean value.
+
+                    But in the case of Strict Inequality operator (!==) checks both the values and their data types. It returns true only if both the values and the types are different</li>
+
+                    <li><span>Greater than (>), Less than (<), Greater than or equal to (>=), Less than or equal to (<=) :</span> The greater than operator (>) checks if the left operand is numerically greater than the right operand.
+
+                    The less than operator (<) checks if the left operand is numerically less than the right operand.
+                    
+                    The greater than or equal to operator (>=) checks if the left operand is numerically greater than or equal to the right operand.
+                    
+                    The less than or equal to operator (<=) checks if the left operand is numerically less than or equal to the right operand.
+                    
+                    </li>
+                    <li><span>. Nullish Coalescing (??) :</span> The nullish coalescing operator (??) is used to handle null or undefined values. It returns the right-hand operand if the left-hand operand is null or undefined; otherwise, it returns the left-hand operand.</li>
+                </ul>
+            </p>
+            </li>
+            <hr>
+            <li><span class="subheading">4. Logical Operator</span> 
+            <p>
+                Logical operators perform logical operations and return a boolean value, either true or false.
+                
+                There are <span>three main logical operators</span> AND (&&), OR (||), and NOT (!).
+
+                <ul class="sublist">
+                    <li><span>AND Operator(&&) :</span> 
+                    <p>
+                        This operator returns true if both operands are true, and false otherwise. It is a logical first operator, meaning that if the first operand is false, the second operand is not evaluated.
+                    </p>
+                    </li>
+                    <li><span> Logical OR(||) Operator :</span> 
+                    <p>
+                        This operator returns true if at least one of the operan's is true, an' false otherwise. Like && operator, it is also a short-circuit operator.
+                    </p>
+                    </li>
+                    <li><span>Logical Not (!)</span>
+                        <p>
+                          This operator inverts the Boolean value of the operand. If the operand is true, the operator returns false, and if the operand is false, the operator returns true.
+                          These logical operators can be used to perform a variety of tasks, such as testing multiple conditions or combining multiple conditions in a single expression. They are often used with other techniques and operations to perform more complex tasks, such as flow control and data validation. We will be looking at their applications in further lectures.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+            </li>
+            <hr>
+            <li><span class="subheading">5. Unary Operator</span>
+                <p>
+                    Unary operators are operators that perform actions on a single operand. Let's explore some of the Unary 
+                    operators: 
+                    <ul>
+                        <li><span> Unary Plus('+') :</span> 
+                            <p>
+                                The unary plus operator is used to convert its operand into a number. While this might seem redundant, it becomes valuable when dealing with user inputs that need to be explicitly converted to numbers. <br>
+                                Example: <br>
+                                let numString  = "10"; <br>
+                                let negativeNum = +numString;     // Output: 10 <br>
+                                <span class="red-color">
+                                    We are declaring a variable numString and assigning it the value "42", which is a string representing the characters "4" and "2". <br>
+
+                                Then, We use the unary plus operator (+) on numString to convert it into a number. This unary plus operation constrain the string "42" into the numeric value 42
+                                </span>
+                            </p>
+                        </li>
+                        <li><span>Unary negation('-')</span> 
+                        <p>
+                            The unary negation operator is used to negate the value of its operand, effectively changing its sign.
+                            Example: <br>
+                            let num = 10; <br>
+                            let negativeNum = -num;     // Output: -10 <br>
+                            <span class="red-color">The unary negation operator simply changes the sign of a number. If the number is positive, it becomes negative, and if it's negative, it becomes positive</span>
+                        </p>
+                        </li>
+                        <li><span>Logical NOT('!') :</span> 
+                            <p>
+                                The logical NOT operator is used to negate the Boolean value of its operand. It converts true to false and vice versa. It is a unary operator.We have already known the 'Logical NOT' operator.
+
+                            </p>
+                        </li>
+                        <li><span> Increment (++) and Decrement (--) Operators :</span> 
+                            <p>
+                                The increment (++) and decrement (--) operators are used to increase or decrease the value of a variable by 1, respectively.
+                            </p>
+
+                        </li>
+                        <li><span>typeof Operator :</span> 
+                            The typeof operator is used to determine the data type of its operand or we can say it  allows checking the data type of the variable.
+
+                        </li>
+                        <li><span> void operator :</span> 
+                            The void operator is used to evaluate an expression and return undefined.
+                            In JavaScript, the void operator is used to explicitly return undefined. It's a unary operator, meaning only one operand can be used with it. You can use it like shown below — <span>standalone or with a parenthesis</span>. <br>
+                           <span> void expression</span> <br>
+                           <span> void (expression)</span>
+
+
+                        </li>
+                        <li><span> delete Operator :</span> 
+                            <p>
+                                The delete operator is used to delete an object's property or an element of an array. <br>
+                                let user = {name:"Raj", age:25, Gender:"Male"} <br>
+                                <span>delete</span> user.age;  // <span>Deletes the age property</span>. <br>
+                                console.log(user); // Output: {name:"Raj", Gender:"Male"}
+
+                            </p>
+
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <hr>
+            <li><span class="subheading">6. Ternary Operator</span>
+            <p>
+               The ternary operator is a shorthand way to write simple conditional statements.
+                The syntax is in the following way: <br>
+                <h2><span>Condition </span><span class="red-color"> ? </span> <span>expression 1</span> <span class="red-color"> : </span> <span> expression 2</span> </h2>
+               
+                <span>Condition </span>A boolean expression that is evaluated.  <br>
+                <span>expr1</span> The value to return if the condition is true.   <br>
+                <span>expr2</span> The value to r!turn if the condition is false. <br>
+                <br>
+               <p>
+                const age = 18; <br>
+                const canVote = age >= 18 ? ' YES' : 'NO' ; <br>
+               // OUTPUT : 'YES'
+               </p>
+            </p>
+            </li>
+            <hr>
+            <li><span class="subheading">7. String Operator (string concatenation +)</span>
+                <p>
+                String operators in JavaScript are used to concatenate strings<
+              
+                The syntax is in the following way: 
+                <span>str1</span> <span class="red-color"> + </span><span>str2</span> <br> <br>
+                <span>str1 </span> The first string to concatenate. <br>
+                <span>str2 </span>  The second string to concatenate.   <br> <br>
+                let first_Name ='Raj';  <br>
+                let last_Name ='Kumar';  <br>
+                let full_Name = first_Name + ' ' + last_Name; <br>
+                // Output : Raj Kumar;
+            </p>
+            </li>
+            <hr>
+            <li><span class="subheading">8.  Member Access Operator</span>
+            <p>
+                <ol>
+                    <li><span>Dot Notation :</span> <span class="red-color">object.property</span>
+                    </li>
+                    <li>
+                        <span>Bracket Notation :</span> <span class="red-color">object ['property']</span>
+                    </li>
+                </ol>
+                <br>    <br>
+                <span>object:</span> The object from which you want to access a property or method. <br>
+
+                <span>property:</span> The name of the property or method.  <br>
+
+                
+              <p>
+                <span>Example :</span> <br>
+                const person = {    <br>
+                    firstName: 'John',  <br>
+                    lastName: 'Doe',    <br>
+                };  <br>
+
+                console.log(person.firstName); // Output: John  <br>
+                console.log(person ['lastName']; // Output: Doe <br> <br>
+
+                The instance of operator is used to check if an object is an instance of a particular class or constructor function. <br>
+              </p>
+                <br>
+                <span>object :</span> The object to test    <br>
+                <span>constructor :</span> The constructor function to test against.    <br><br>
+                <span class="red-color">Example :</span>    <br>
+
+                class Animal <span>{</span>  <br>
+                    constructor (name) <span class="red-color">{</span>    <br>
+                        this.name = name;   <br>
+                    <span class="red-color">}</span>   <br>
+                <span> }</span>
+            </p>
+            </li>
+            <hr>
+            <li><span class="subheading">9. Comma Operator</span>
+                <p>
+                    The comma operator allows you to evaluate multiple expressions (from left to right), returning the result of the last expression 
+                    <span class="red-color">Syntax</span>
+                    <span>expr1</span>,<span>expr2</span>,<span>expr3</span>,.......,<span>exprN</span>
+                </p>
+            </li>
+            <hr>
+           
+        </ul>
+
+</body>
+</html>
